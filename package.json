@@ -1,7 +1,7 @@
 {
-  "name": "angular.io-example",
-  "version": "0.0.0",
-  "description": "Example project from an angular.io guide.",
+  "name": "countdown-solver",
+  "version": "1.0.0",
+  "description": "I need to update this",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
