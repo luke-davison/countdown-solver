@@ -27,8 +27,8 @@ template: `
         <div>
           <label for="target">Target:</label>
           <input id="target" formControlName="target" placeholder="Enter a target number">
-          <span *ngIf="nums.invalid && (nums.dirty || nums.touched)" class="alert">
-            <div *ngIf="nums.errors?.['mustContainNumber']">
+          <span *ngIf="target.invalid && (target.dirty || target.touched)" class="alert">
+            <div *ngIf="target.errors?.['mustContainNumber']">
               Must contain a postive integer
             </div>
           </span>
@@ -59,10 +59,12 @@ export class AppComponent {
   get nums() {
     return this.form.get("nums")!
   }
+
+  get target() {
+    return this.form.get("target")!
+  }
   
   onSubmit() {
-    console.log(this.form)
-
     this.answer = getAnswer(convertStringToNums(this.form.value.nums || ""), Number(this.form.value.target))
   }
 }
