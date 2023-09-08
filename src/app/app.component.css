@@ -10,3 +10,26 @@ header {
 .content {
   padding: var(--content-padding);
 }
+
+input[type="text"] {
+  border: solid 1px var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 4px;
+  display: inline-block;
+  width: 30%;
+  margin-left: 10px;
+}
+
+button {
+  padding: 10px;
+  border: solid 1px var(--primary-color);
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 10px;
+}
